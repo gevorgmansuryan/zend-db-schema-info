@@ -1,0 +1,21 @@
+{
+    "name": "gevman/zend-db-schema-info",
+    "description": "Database Schema information provider for zend framework",
+    "type": "library",
+    "require": {
+        "php": ">=7.1",
+        "zendframework/zend-db": "^2.9"
+    },
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Gevorg Mansuryan",
+            "email": "gevorgmansuryan@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Gevman\\DbSchemaInfo\\": "src/"
+        }
+    }
+}
