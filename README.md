@@ -1,6 +1,12 @@
 # Zend Db Schema Info
 ### Database Schema information provider for zend framework
 
+## Installation
+
+```bash
+composer require gevman/zend-db-schema-info
+```
+
 ## Available methods
 
 ##### `string[]` Schema::getTables(`void`)
