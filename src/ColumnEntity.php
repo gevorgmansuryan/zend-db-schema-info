@@ -25,7 +25,7 @@ class ColumnEntity
     protected $type;
     /**
      * @var string the PHP type of this column. Possible PHP types include:
-     * `string`, `boolean`, `integer`, `double`.
+     * `string`, `bool`, `int`, `float`.
      */
     protected $phpType;
     /**

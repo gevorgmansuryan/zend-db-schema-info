@@ -219,12 +219,12 @@ class Schema
     {
         static $typeMap = [
             // abstract type => php type
-            'smallint' => 'integer',
-            'integer' => 'integer',
-            'bigint' => 'integer',
-            'boolean' => 'boolean',
-            'float' => 'double',
-            'double' => 'double',
+            'smallint' => 'int',
+            'integer' => 'int',
+            'bigint' => 'int',
+            'boolean' => 'bool',
+            'float' => 'float',
+            'double' => 'float',
             'binary' => 'resource',
         ];
         if (isset($typeMap[$column->getType()])) {
