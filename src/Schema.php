@@ -229,9 +229,9 @@ class Schema
         ];
         if (isset($typeMap[$column->getType()])) {
             if ($column->getType() === 'bigint') {
-                return PHP_INT_SIZE === 8 && !$column->isUnsigned() ? 'integer' : 'string';
+                return PHP_INT_SIZE === 8 && !$column->isUnsigned() ? 'int' : 'string';
             } elseif ($column->getType() === 'integer') {
-                return PHP_INT_SIZE === 4 && $column->isUnsigned() ? 'string' : 'integer';
+                return PHP_INT_SIZE === 4 && $column->isUnsigned() ? 'string' : 'int';
             }
 
             return $typeMap[$column->getType()];
